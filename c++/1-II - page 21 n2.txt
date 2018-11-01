@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	
+	double p(0), s(0), edge(0);	
+	cout << "Enter the perimeter of a triangle: " << endl; cin >> p;
+	edge = p / 3.0;
+	s = sqrt(3) * edge*edge / 4;
+	cout << "The answer is: " << s << endl;
+    return 0;
+}

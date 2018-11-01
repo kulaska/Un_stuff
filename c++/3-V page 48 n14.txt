@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <math.h>
+
+using namespace std;
+
+double y(double x) {
+	if (log(4 - 2 * x) == 0 || (4 - 2 * x) <= 0 || (x*x - 2 * x + 1) < 0) {
+		cout << "Function is undefined" << endl;
+		return NULL;
+	}
+	else {
+		double sum(0);
+		sum = ((sqrt(x*x - 2 * x + 1)) / (log(4 - 2 * x)));
+		return sum;
+		
+	}
+}
+
+int main()
+{
+	
+	int a(0), b(0), h(0);
+
+	cout << "Enter the area (a, b) and the step (h) : " << endl;
+	cin >> a >> b >> h;
+	
+	for (double i = a, p = 0; i <= b; i += h) {
+		p = y(i);
+		cout << p << endl;
+	}
+    return 0;
+}

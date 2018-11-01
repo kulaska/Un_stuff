@@ -1,0 +1,15 @@
+#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+		for (int i = 10; i <= 25; i++) {
+		cout << i << " " << i + 0.4 << endl;
+	}
+	
+    return 0;
+}

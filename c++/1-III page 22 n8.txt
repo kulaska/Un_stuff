@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	
+	int p(0), s(0), edge(0);
+	
+	cout << "Enter the number: " << endl; cin >> p;
+
+	if ((p % 10) == (p / 10)) cout << "Yes, digits are equal" << s << endl; else cout << "Nah, digits aren't the same" << endl;
+    return 0;
+}
