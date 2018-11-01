@@ -3,23 +3,25 @@
 
 #include "stdafx.h"
 
-double recc(double b, int c) {
-	while (c > 0) {
+double recc(double b, int c, int i) {
+	while (c > 1) {
 		c--;
 		b = (b * 0.1) + 10;
-		cout << b << setprecision(15)<< endl;
-		return recc(b, c);
+		cout << i << " " << b << setprecision(15) << endl;
+		i++;
+		return recc(b, c, i);
 	}
 }
 
 int main()
 {	
-	int n(0);
+	int n(0), i(2);
 	double b_Prev(9);	
 	cout << "Enter n: " << endl;
 	cin >> n;
-	cout << b_Prev << endl;
-	recc(b_Prev, n);
+	cout << "n" << " " << "B" << endl;
+	cout << "1 " << "" << b_Prev << endl;
+	recc(b_Prev, n, i);
     return 0;
 }
 
