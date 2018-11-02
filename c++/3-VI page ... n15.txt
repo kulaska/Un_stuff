@@ -21,7 +21,7 @@ int main()
 	
 	for (double i = a, p = 0; i <= b; i += h) {		
 		p = y(i);
-		cout << i << " " << p << endl;
+		cout << i << "\t" << p << endl;
 	}
     return 0;
 }
