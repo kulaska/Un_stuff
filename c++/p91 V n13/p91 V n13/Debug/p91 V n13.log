@@ -1,0 +1,5 @@
+﻿  p91 V n13.cpp
+c:\users\dufresne\projects\un_stuff\c++\p91 v n13\p91 v n13\p91 v n13.cpp(19): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
+c:\users\dufresne\projects\un_stuff\c++\p91 v n13\p91 v n13\p91 v n13.cpp(21): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
+  p91 V n13.vcxproj -> C:\Users\Dufresne\Projects\Un_stuff\c++\p91 V n13\Debug\p91 V n13.exe
+  p91 V n13.vcxproj -> C:\Users\Dufresne\Projects\Un_stuff\c++\p91 V n13\Debug\p91 V n13.pdb (Full PDB)
