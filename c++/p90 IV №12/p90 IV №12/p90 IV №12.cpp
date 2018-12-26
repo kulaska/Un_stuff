@@ -1,9 +1,9 @@
 // p90 IV ¹12.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
-#include <iostream>
-#include <vector>
+#include "stdafx.h" 
+#include <iostream> 
+#include <vector> 
 using namespace std;
 
 int main()
@@ -35,8 +35,8 @@ int main()
 	}
 
 	for (int i = 0; i < sizeRow; i++) {
-		for (int j = 0; j < sizeCol; j++) if (a[i][j] % 2 == 1) temp = j+1;		
-		second.push_back(temp);		
+		for (int j = 0; j < sizeCol; j++) if (a[j][i] % 2 == 1) temp = j + 1;
+		second.push_back(temp);
 	}
 
 	int* ar = second.data();
@@ -46,12 +46,12 @@ int main()
 	for (int i = 0; i < sizeRow; i++) {
 		cout << ar[i] << endl;
 	}
-	
+
 	for (int i = 0; i < sizeRow; i++) {
 		delete[]a[i];
 	}
 
-	delete[]a, ar;	
+	delete[]a, ar;
 
 	return 0;
 }
